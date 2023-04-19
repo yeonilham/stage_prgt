@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <title>Responsive Sidebar Menu</title> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+      <header>Dashboard</header>
+      <a routerLink="/" class="active">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+      <a routerLink="/Employe" class="active">
+        <i class="fas fa-qrcode"></i>
+        <span>Employe</span>
+      </a>
+      <a routerLink="/custumer">
+        <i class="fas fa-link"></i>
+        <span>custumer</span>
+      </a>
+      <a routerLink="/prod">
+        <i class="fas fa-stream"></i>
+        <span>product</span>
+      </a>
+      <a routerLink="/status" >
+        <i class="fas fa-home"></i>
+        <span>Status</span>
+      </a>
+      <a routerLink="/Complaint" >
+        <i class="fas fa-home"></i>
+        <span>Complaint</span>
+      </a>
+
+    </div>
+    <router-outlet></router-outlet>
+</body>
+</html>
+

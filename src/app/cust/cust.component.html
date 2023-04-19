@@ -1,0 +1,32 @@
+<div class="container">
+  <h2>
+    Ajoutez les custumers
+  </h2>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Name</label>
+    <input type="text" class="form-control" id="formGroupExampleInput"[(ngModel)]="name" placeholder="Enter Name">
+  </div>
+  <div class="button">
+    <button type="submit" class="btn btn-primary"(click)="submit(name)">Ajoutez</button>
+  </div>
+</div>
+<!--table-->
+<div class="container">
+  <h2>Data</h2>
+  <table class="table table-striped">
+    <thead>
+      <th>id</th>
+      <th>Name</th>
+      <th>Delete</th>
+
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let val of data;let i=index;">
+        <td>{{ i+1 }}</td>
+        <td>{{val.name}}</td>
+        <td><input (click)="delete(val)" type="button" class="btn btn-danger" value="x"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
